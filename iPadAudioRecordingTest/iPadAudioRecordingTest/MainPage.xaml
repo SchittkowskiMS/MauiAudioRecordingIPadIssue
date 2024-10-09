@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="iPadAudioRecordingTest.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <Border StrokeThickness="2" Stroke="Black">
+                <StackLayout>
+                    <Label Text="Recording" />
+                    <Button Text="Start" x:Name="btRecordingStart" Clicked="btRecordingStart_Clicked" />
+                    <Button Text="Stop" x:Name="btRecordingStop" Clicked="btRecordingStop_Clicked" />
+                    <Button Text="SaveToFile" x:Name="btRecordingSave" Clicked="btRecordingSave_Clicked"/>
+                </StackLayout>
+            </Border>
+            <Border StrokeThickness="2" Stroke="Black">
+                <StackLayout>
+                    <Label Text="Replay" />
+                    <Button Text="Start" x:Name="btReplayStart" Clicked="btReplayStart_Clicked" />
+                    <Button Text="Stop" x:Name="btReplayStop" Clicked="btReplayStop_Clicked" />
+                </StackLayout>
+            </Border>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
